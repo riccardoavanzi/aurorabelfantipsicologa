@@ -1,0 +1,49 @@
+
+// TITLES FONT - BRUTALIST, IBM PLEX Mono
+// @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+// PARAGRAPHS FONT - BRUTALIST Hanken grotesque
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&display=swap');
+
+// TITLES FONT - PLAYFUL, Zilla Slab
+// @import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+
+// PARAGRAPHS FONT - PLAYFUL, Nunito
+// @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+// PARAGRAPHS FONT - DEFAULT, Inter
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+// TITLE FONT - DEFAULT, Lato
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+// TITLE FONT - CHILD
+// @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+// TEXT FONT - QUATTROCENTO
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
+
+// FONTS
+$text: 'Hanken Grotesk', sans-serif;
+// $text: 'Inter', sans-serif;
+// $title: 'IBM Plex Mono', monospace;
+// $title: 'Zilla Slab', serif;
+
+// FONTS
+
+$text: 'Quattrocento Sans', sans-serif;
+$title: 'Hanken Grotesk', sans-serif;
+
+// FONT-SIZES
+$small: .8em;
+$default: 1em;
+$big: 1.3em;
+$huge: 2em;
+$jumbo: 2.8em;
+$giant: 3.2em;
+$base: .6rem;
+
+// FONT-WEIGHT
+$light: 200;
+$regular: 400;
+$bold: 700;

@@ -1,0 +1,25 @@
+
+// COLOR PALETTE
+$primary-color: #25969f;
+$primary-color-light:#ffffff;
+
+$secondary-color: #709bd7;
+$secondary-color-light: #cae5eb;
+
+$contrast-color: #98385e;
+$contrast-color-light: #df94d6;
+
+// BACKGROUNDS
+$primary-bg: #25969f;
+$secondary-bg: #709bd7;
+$contrast-bg: #983838;
+$lightgray-bg: #F3F3F3;
+$darker-white: #F8F8F8;
+
+
+// GRADIENTS
+$primary-gradient: linear-gradient(45deg, #37b0b8 0%, #82AAE3 100%);
+$secondary-gradient: linear-gradient(45deg, #709bd7 0%, #98385e 100%);
+$primary-gradient-transparent: linear-gradient(90deg, rgba(70, 165, 186, 0.591) 0%, #709bd7 100%);
+$secondary-gradient-transparent: linear-gradient(90deg, rgba(163, 215, 216, 0.525) 0%, rgb(144, 183, 224) 100%);
+$white-transparent-bg: linear-gradient(45deg, #ffffffdd 0%, rgba(255,255,255,1) 100%);
