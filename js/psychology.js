@@ -15,12 +15,12 @@ window.onscroll = function() {bgFunction()};
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
                 document.getElementById("desktop-nav").classList.add('nav-bg');
                 document.getElementById("desktop-nav").classList.add('fixed-top');
-                document.getElementById("logo-nav").src="/raw_files/templates/psychology/assets/logo-white.png";
+                document.getElementById("logo-nav").src="../assets/logo-white.png";
             } else {
                 // document.getElementById("desktop-nav").style.background = "none";
                 document.getElementById("desktop-nav").classList.remove('fixed-top');
                 document.getElementById("desktop-nav").classList.remove('nav-bg');
-                document.getElementById("logo-nav").src="/raw_files/templates/psychology/assets/logo.png";
+                document.getElementById("logo-nav").src="../assets/logo.png";
             }
         }  
 
