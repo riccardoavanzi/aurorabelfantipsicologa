@@ -1060,6 +1060,9 @@ input {
       width: 420px;
       height: 560px; } }
 @media only screen and (max-width: 425px) {
+  .top-banner-content p {
+    font-size: 0.8em; }
+
   p {
     font-size: 1.3em;
     line-height: 1.3em; }

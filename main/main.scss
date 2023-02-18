@@ -1737,6 +1737,11 @@ ul{
         }
 }
 @media only screen and (max-width: 425px){
+        .top-banner-content{
+                p{
+                        font-size: $small;
+                }
+        }
         p{
                 font-size: $big;
                 line-height: $big;
