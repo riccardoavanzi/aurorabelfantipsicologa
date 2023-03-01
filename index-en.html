@@ -64,17 +64,17 @@
                     <!-- OPTION 1, SIMPLE LIST -->
                     <ul class="simple-list">
                         <li>
-                            <a href="/index-en.html#intro" data-bs-dismiss="modal" >Psychological counselling
+                            <a type="button" href="/index-en.html#intro" onclick="dismissModal(event)" >Psychological counselling
                             </a>
                         </li>
                         <li>
-                            <a href="/tematiche-en.html#tematiche">Topics</a>
+                            <a type="button" href="/tematiche-en.html#tematiche">Topics</a>
                         </li>
                         <li>
-                            <a href="/index-en.html#about" data-bs-dismiss="modal">About me</a>
+                            <a type="button" href="/index-en.html#about" onclick="dismissModal(event)">About me</a>
                         </li>
                         <li>
-                            <a href="/index-en.html#contatti" class="btn btn-primary" data-bs-dismiss="modal" >Contact me</a>
+                            <a type="button" href="/index-en.html#contatti" class="btn btn-primary" onclick="dismissModal(event)" >Contact me</a>
                         </li>
                     </ul>
                 </div>
@@ -770,6 +770,12 @@
             });
         }
     </script>
+    <script>
+        function dismissModal(event) {
+          event.preventDefault();
+          $('#mobile-menu').modal('hide');
+        }
+        </script>
 
 </body>
 </html>
