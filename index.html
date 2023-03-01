@@ -57,26 +57,26 @@
                     <div class="logo-squared">
                         <img src="./assets/logo-squared.png" alt="logo-squared">
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" id="close-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- MENU CONTENT -->
                 <div class="modal-body">
                     <!-- OPTION 1, SIMPLE LIST -->
                     <ul class="simple-list">
                         <li>
-                            <a href="/index.html#intro">Consulenza psicologica</a>
+                            <a href="#intro" onclick="close()">Consulenza psicologica</a>
                         </li>
                         <li>
                             <a href="/tematiche.html#tematiche">Tematiche</a>
                         </li>
                         <li>
-                            <a href="/index.html#about">Chi sono</a>
+                            <a href="#about">Chi sono</a>
                         </li>
                         <li>
                             <!-- <a data-bs-dismiss="modal" href="#">Le marche</a> -->
                         </li>
                         <li>
-                            <a href="/index.html#contatti" class="btn btn-primary">Contattami</a>
+                            <a href="#contatti" class="btn btn-primary">Contattami</a>
                         </li>
                     </ul>
                 </div>
@@ -772,6 +772,11 @@
         effect: "cards",
         grabCursor: true,
             });
+        }
+    </script>
+    <script>
+        function close(){
+            document.getElementById("close-modal-btn").click();
         }
     </script>
 
