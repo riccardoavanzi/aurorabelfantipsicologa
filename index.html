@@ -45,11 +45,9 @@
 <!-- END OF BOILERPLATE -->
 <body>
     
-    <!-- MOUSEMOVE -->
-    <div class="mousemove"></div>
 
     <!-- MOBILE MENU -->
-    <div id="mobile-menu" class="modal fade">
+    <div class="modal fade" id="mobile-menu" >
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
                 <!-- MENU HEADER -->
@@ -64,16 +62,13 @@
                     <!-- OPTION 1, SIMPLE LIST -->
                     <ul class="simple-list">
                         <li>
-                            <a href="#intro" onclick="close()">Consulenza psicologica</a>
+                            <a href="#intro">Consulenza psicologica</a>
                         </li>
                         <li>
                             <a href="/tematiche.html#tematiche">Tematiche</a>
                         </li>
                         <li>
                             <a href="#about">Chi sono</a>
-                        </li>
-                        <li>
-                            <!-- <a data-bs-dismiss="modal" href="#">Le marche</a> -->
                         </li>
                         <li>
                             <a href="#contatti" class="btn btn-primary">Contattami</a>
@@ -112,6 +107,8 @@
         </div>
     </div>
 
+    <!-- MOUSEMOVE -->
+    <!-- <div class="mousemove"></div> -->
     <!-- TOP BANNER -->
     <section>
         <div class="top-banner-container animate__animated animate__fadeInDown">
@@ -134,13 +131,13 @@
                                     <img src="./assets/logo.png" alt="logo" id="logo-nav">
                                 </a>
                             </li>
-                            <li>
+                            <li class="mobile-menu-link">
                                 <a href="#intro">Consulenza psicologica</a>
                             </li>
                             <li>
                                 <a href="tematiche.html#tematiche">Tematiche</a>
                             </li>
-                            <li>
+                            <li class="mobile-menu-link">
                                 <a href="#about">Chi sono</a>
                             </li>
                         </div>
@@ -775,9 +772,15 @@
         }
     </script>
     <script>
-        function close(){
-            document.getElementById("close-modal-btn").click();
-        }
+        const links = document.querySelectorAll('#mobile-menu a[href^="#"]'); // Select all links with href starting with #
+        links.forEach(function(link) { // Loop through each link
+            link.addEventListener('click', function() { // Add a click event listener to the link
+                const modalCloseBtn = document.querySelector('#close-modal-btn'); // Select the modal
+                setTimeout(() => {
+                    modalCloseBtn.click();;
+                    }, "1000")
+            });
+        });
     </script>
 
 </body>

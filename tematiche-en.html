@@ -57,7 +57,7 @@
                     <div class="logo-squared">
                         <img src="./assets/logo-squared.png" alt="logo-squared">
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close" id="close-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!-- MENU CONTENT -->
                 <div class="modal-body">
@@ -71,9 +71,6 @@
                         </li>
                         <li>
                             <a href="/index-en.html#about">About me</a>
-                        </li>
-                        <li>
-                            <!-- <a data-bs-dismiss="modal" href="#">Le marche</a> -->
                         </li>
                         <li>
                             <a href="/index-en.html#contatti" class="btn btn-primary">Contact me</a>
@@ -812,6 +809,17 @@
         grabCursor: true,
             });
         }
+    </script>
+    <script>
+        const links = document.querySelectorAll('#mobile-menu a[href^="#"]'); // Select all links with href starting with #
+        links.forEach(function(link) { // Loop through each link
+            link.addEventListener('click', function() { // Add a click event listener to the link
+                const modalCloseBtn = document.querySelector('#close-modal-btn'); // Select the modal
+                setTimeout(() => {
+                    modalCloseBtn.click();;
+                    }, "1000")
+            });
+        });
     </script>
 </body>
 </html>
