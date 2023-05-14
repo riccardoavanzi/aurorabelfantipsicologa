@@ -1,0 +1,349 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Dott.ssa Aurora Belfanti, Psicologa a Trento e online</title>
+    <meta name="description" content="Cerchi una psicologa a Trento e Trentino per parlare di sessualità, genere, famiglia, lavoro, genitorialità o scuola? Sono qui per te. Offro servizi di supporto psicologico personalizzato per adulti, adolescenti e studenti in italiano, inglese ed altre lingue straniere. Questa sezione del sito contiene informationi ed articoli relativi a pratiche psicologiche e suggerimenti, spunti di lettura, per consoscersi meglio.">
+    <meta name="keywords" content="Psicologa a Trento, Psicologa in Trentino, Sessualità, Genere, Famiglia, Genitorialità, Scuola, Supporto psicologico, Psicologia, Consulenza psicologica, Trento psychologist, Sexuality, Gender, Family, Parenting, School, Psychological support, Psychological counseling">
+
+    <!-- BOOTSTRAP IMPORT -->
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    <!-- MAIN SCSS IMPORT -->
+    <link rel="stylesheet" href="./main/main.css">
+
+    <!-- THEME IMPORT -->
+    <link rel="stylesheet" href="./theme/psychology.css">
+
+    <!-- ANIMATION LIBRARY IMPORT -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- AOS ANIMATION LIBRARY IMPORT -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- FLAGS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
+
+    <!-- ICONS IMPORT -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- SWIPERJS IMPORT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon//favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon//site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+
+    <!-- MOUSEMOVE -->
+    <div class="mousemove"></div>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="modal fade">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <!-- MENU HEADER -->
+                <div class="modal-header">
+                    <div class="logo-squared">
+                        <img src="./assets/logo-squared.png" alt="logo-squared">
+                    </div>
+                    <button type="button" class="btn-close" id="close-modal-btn" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <!-- MENU CONTENT -->
+                <div class="modal-body">
+                    <!-- OPTION 1, SIMPLE LIST -->
+                    <ul class="simple-list">
+                        <li>
+                            <a href="index.html#intro">Consulenza psicologica</a>
+                        </li>
+                        <li>
+                            <a href="/tematiche.html#tematiche" data-bs-dismiss="modal">Tematiche</a>
+                        </li>
+                        <li>
+                            <a href="/index.html#about">Chi sono</a>
+                        </li>
+                        <li>
+                            <!-- <a data-bs-dismiss="modal" href="#">Le marche</a> -->
+                        </li>
+                        <li>
+                            <a href="/index.html#contatti" class="btn btn-primary">Contattami</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- MENU FOOTER -->
+                <div class="modal-footer">
+                    <a href="/tematiche.html" data-bs-dismiss="modal" class="language">Italiano</a>
+                    <a href="/tematiche-en.html" class="language">English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER , INCLUDES NAVBAR AND HERO -->
+    <header id="page-header" class="pic-bg blog-header">
+        <div class="page-header-wrapper">
+            <div class="page-header-content">
+                <nav class="nav-wrapper" id="desktop-nav" class="primary-bg">
+                    <ul class="nav-content">
+                        <!-- DESKTOP NAVBAR -->
+                        <div class="left">
+                            <li>
+                                <a href="index.html">
+                                    <img src="./assets/logo.png" alt="logo" id="logo-nav">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="index.html#intro">Consulenza psicologica</a>
+                            </li>
+                            <li>
+                                <a href="/tematiche.html">Tematiche</a>
+                            </li>
+                            <li>
+                                <a href="index.html#about">Chi sono</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                        </div>
+                        <div class="right">
+                            <li>
+                                <a href="index.html#contatti" class="btn btn-secondary" id="nav-cta">Contattami</a>
+                            </li>
+                            <!-- LANGUAGE -->
+                            <!-- <li>
+                                <button data-bs-toggle="modal" data-bs-target="#language-modal" class="btn">
+                                    <i class='bx bx-world' id="language-icon"></i>
+                                </button>
+                            </li> -->
+                        </div>
+                        <!-- MOBILE NAVBAR -->
+                        <div class="logo-squared">
+                            <img src="./assets/logo-squared.png" alt="logo-squared">
+                        </div>
+                        <!-- MOBILE MENU MODAL TRIGGER -->
+                        <button class="mobile-menu-icon" data-bs-toggle="modal" data-bs-target="#mobile-menu">
+                            <i class='bx bx-menu-alt-right'></i>
+                        </button>
+                    </ul>
+                    <!-- MENU DESKTOP -->
+                    <!-- <div class="desktop-menu-container animate__animated animate__fadeIn" id="desktop-menu-expanded">
+                        <div class="desktop-menu-content">
+                            <div class="desktop-menu-list" id="menu-list-one">
+                                <h4>Products</h4>
+                                <ul>
+                                    <li id="desktop-menu-list-item-1">
+                                        <div class="icon">
+                                            <i class='bx bxs-crown'></i>
+                                        </div>
+                                        <div class="desktop-menu-item">
+                                            <a href="#">Element one</a>
+                                        </div>
+                                    </li>
+                                    <li id="desktop-menu-list-item-2">
+                                        <div class="icon">
+                                            <i class='bx bxs-meteor'></i>
+                                        </div>
+                                        <div class="desktop-menu-item">
+                                            <a href="#">Element two</a>
+                                        </div>
+                                    </li>
+                                    <li id="desktop-menu-list-item-3">
+                                        <div class="icon">
+                                            <i class='bx bxs-dog'></i>
+                                        </div>
+                                        <div class="desktop-menu-item">
+                                            <a href="#">Element three</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="desktop-menu-list" id="menu-list-two">
+                                <h4>Services</h4>
+                                <ul>
+                                    <li id="desktop-menu-list-item-4">
+                                        <div class="icon">
+                                            <i class='bx bxs-crown'></i>
+                                        </div>
+                                        <div class="desktop-menu-item">
+                                            <a href="#">Element one</a>
+                                        </div>
+                                    </li>
+                                    <li id="desktop-menu-list-item-5">
+                                        <div class="icon">
+                                            <i class='bx bxs-meteor'></i>
+                                        </div>
+                                        <div class="desktop-menu-item">
+                                            <a href="#">Element two</a>
+                                        </div>
+                                    </li>
+                                    <li id="desktop-menu-list-item-6">
+                                        <div class="icon">
+                                            <i class='bx bxs-dog'></i>
+                                        </div>
+                                        <div class="desktop-menu-item">
+                                            <a href="#">Element three</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> -->
+                </nav>
+                <div class="hero-wrapper">
+                    <div class="hero-content centered">
+                        <!-- <div class="profile-img">
+                            <img src="./assets/logo-squared.png" alt="logo">
+                        </div> -->
+                        <div class="hero-title">
+                            <h1>Blog</h1>
+                            <h4></h4>
+                        </div>
+                        <div class="hero-cta">
+                            <!-- <a href="#" class="btn btn-primary">Scopri di piú</a> -->
+                            <div class="divider primary-bg">
+                                <div class="divider-wrapper">
+                                    <div class="divider-content animate__animated animate__pulse animate__repeat__4">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BLOG HEADER -->
+    <section>
+        <div class="section-wrapper">
+            <div class="section-content">
+                <div class="section-block1">
+                    <div class="section-title">
+                        <h2>Un blog diverso dagli altri</h2>
+                        <h4>Una raccolta di temi, contribuzioni e pensieri per stimolare il nostro quotidiano.</h4>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eum deserunt quaerat. Ab qui delectus laboriosam rerum placeat cupiditate suscipit fugit natus dolorem, nisi necessitatibus inventore dolores asperiores ipsa tenetur.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veritatis reprehenderit iusto possimus quis soluta nihil voluptatum natus, cupiditate ad?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section id="blog-posts">
+        <div class="section-wrapper">
+            <div class="section-block1">
+                <div class="section-title">
+                    <h2>Gli articoli del blog</h2>
+                </div>
+            </div>
+            <div class="blog-posts">
+                <ul>
+                    <!-- ARTICLE SESSUALIT´A FIGLI -->
+                    <li class="blog-article-item">
+                        <div class="card">
+                            <div class="row g-0 d-flex align-items-center">
+                              <div class="col-md-4 image">
+                                <img src="https://images.unsplash.com/photo-1517554558809-9b4971b38f39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                    <div class="card-body">
+                                    <div class="d-flex article-themes">
+                                        <div class="chip-basic">Affettivitá</div>
+                                        <div class="chip-basic">Sessualitá</div>
+                                    </div>
+                                    <h3 class="card-title">Parlare di affettività e sessualità con i propri figli.
+                                    </h3>
+                                    <p class="card-text">Molti genitori mi chiedono come parlare ai propri figli di affettività e di sessualità.
+                                        E' sicuramente un tema non sempre facile da trattare, viviamo in una società dove ancora spesso non siamo abituati a trattare questi temi con tranquillità e naturalezza.
+                                        </p>
+                                    <p class="card-text"><small class="text-muted">Maggio 2023</small></p>
+                                    <a href="/blog/parlare-di-affettivitá-e-sessualitá-coi-figli.html" class="btn btn-primary">vai all'articolo</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </li>
+                     <!-- LO PSICOLOGO SI SCARICA -->
+                     <li class="blog-article-item">
+                        <div class="card">
+                            <div class="row g-0 d-flex align-items-center">
+                              <div class="col-md-4 image">
+                                <img src="https://images.unsplash.com/photo-1626266061368-46a8f578ddd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                    <div class="card-body">
+                                    <div class="d-flex article-themes">
+                                        <div class="chip-basic">Tasse</div>
+                                        <div class="chip-basic">Spese</div>
+                                    </div>
+                                    <h3 class="card-title">Ma lo psicologo si scarica?</h3>
+                                    <p class="card-text">Ebbene la risposta più semplice è: sì.</p>
+                                    <p class="card-text"><small class="text-muted">Aprile 2023</small></p>
+                                    <a href="/blog/ma-lo-psicologo-si-scarica.html" class="btn btn-primary">vai all'articolo</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </li>
+                     <!-- ES -->
+                     <li class="blog-article-item">
+                        <div class="card">
+                            <div class="row g-0 d-flex align-items-center">
+                              <div class="col-md-4 image">
+                                <img src="https://images.unsplash.com/photo-1504542982118-59308b40fe0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                    <div class="card-body">
+                                    <div class="d-flex article-themes">
+                                        <div class="chip-basic">Erasmus</div>
+                                        <div class="chip-basic">Studenti</div>
+                                    </div>
+                                    <h3 class="card-title">Hai una carta ESN? Ottieni uno sconto sulle sedute!</h3>
+                                    <p class="card-text">Il lavoro che fa ESN (Erasmus Student Network) è un lavoro incredibile: volontari di ogni età e nazionalità che si riuniscono per aiutare gli Erasmus ad avere la migliore esperienza durante il loro soggiorno all’estero.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">Aprile 2023</small></p>
+                                    <a href="/blog/servizio-psicologico-erasmus-ESN.html" class="btn btn-primary">vai all'articolo</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+     <!-- LANDING JS IMPORT -->
+     <script src="./js/psychology.js"></script>
+
+     <!-- AOS JS LIBRARY IMPORT AND INITIALISATION -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
+    <script>
+        const links = document.querySelectorAll('#mobile-menu a[href^="#"]'); // Select all links with href starting with #
+        links.forEach(function(link) { // Loop through each link
+            link.addEventListener('click', function() { // Add a click event listener to the link
+                const modalCloseBtn = document.querySelector('#close-modal-btn'); // Select the modal
+                setTimeout(() => {
+                    modalCloseBtn.click();;
+                    }, "1000")
+            });
+        });
+    </script>
+
+</body>
+</html>
