@@ -344,6 +344,11 @@ i#language-icon {
   background-position: center;
   background-size: cover; }
 
+#consulenza-tecnica .section-wrapper .section-content .section-block2 .img {
+  background: url("https://plus.unsplash.com/premium_photo-1664373232561-41102ae7f848?q=80&w=1588&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover; }
+
 #sesso .section-wrapper .section-content .section-block2 .img {
   background: url("https://images.unsplash.com/photo-1523467179876-7108ea631145?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=418&q=80");
   background-position: center;
@@ -406,3 +411,5 @@ i#language-icon {
     width: 100%;
     margin: auto;
     border-radius: 8px; }
+
+/*# sourceMappingURL=psychology.css.map */
